@@ -8,7 +8,6 @@ import java.io.IOException;
 
 public class Automacao {
 
-
     @Test
     public void pesquisarGoogle() throws IOException {
 
@@ -23,7 +22,6 @@ public class Automacao {
         driver.findElement(By.id("APjFqb")).click();
         driver.findElement(By.id("APjFqb")).sendKeys("Valor do ouro hoje", Keys.ENTER);
         driver.findElement(By.xpath("//*[@id=\"rso\"]/div[3]/div/div/div[1]/div/a/h3")).click();
-        driver.manage().addCookie(new Cookie("CONSENT", "YES+pt-BR"));
         driver.findElement(By.id("nacional")).click();
         WebElement campoNacional =  driver.findElement(By.id("nacional"));
         String valorOuro = campoNacional.getAttribute("value");
@@ -35,7 +33,6 @@ public class Automacao {
         driver.findElement(By.id("APjFqb")).click();
         driver.findElement(By.id("APjFqb")).sendKeys("Valor do dolar hoje", Keys.ENTER);
         driver.findElement(By.xpath("//*[@id=\"rso\"]/div[2]/div[4]/div/div/div/div[1]/div/a/h3")).click();
-        driver.manage().addCookie(new Cookie("CONSENT", "YES+pt-BR"));
         campoNacional =  driver.findElement(By.id("nacional"));
         String valorDolar = campoNacional.getAttribute("value");
         String[] CsvDolar = {"Valor do dolar hoje = ", valorDolar};
@@ -46,7 +43,6 @@ public class Automacao {
         driver.findElement(By.id("APjFqb")).click();
         driver.findElement(By.id("APjFqb")).sendKeys("Valor do Euro hoje", Keys.ENTER);
         driver.findElement(By.xpath("//*[@id=\"rso\"]/div[2]/div[10]/div/div/div/div[1]/div/a/h3")).click();
-        driver.manage().addCookie(new Cookie("CONSENT", "YES+pt-BR"));
         driver.findElement(By.id("nacional")).click();
         campoNacional = driver.findElement(By.id("nacional"));
         String valorEuro = campoNacional.getAttribute("value");
