@@ -7,13 +7,15 @@ This project was made using Selenium Framework with Java language.
 
 1º Clone this repository to some folder using the following command at Git bash: git clone git@github.com:Castilho00/automation-java-ODE.git
 
-2º Open the code in any IDE
+2º Copy the Chrome Driver from the path "src/drive" to the local disk "C:\"
 
-3º Compile and run the code
+3º Open the code in any IDE
 
-4º After the process has been finished, open the file explorer in the same folder you cloned the code and open the .csv file.
+4º Compile and run the code
 
-5º The file will contain the values obtained from the current day
+5º After the process has been finished, open the file explorer in the same folder you cloned the code and open the .csv file.
+
+6º The file will contain the values obtained from the current day
 
 ## Technologies used:
 
