@@ -6,14 +6,14 @@ import org.testng.annotations.Test;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+
 
 public class Automacao {
 
     @Test
     public void pesquisarGoogle() throws IOException, InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\joaov\\Documents\\cursoJavaNelio\\AutomacaoJava\\src\\drive\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         LocalDateTime dateNow = LocalDateTime.now();
