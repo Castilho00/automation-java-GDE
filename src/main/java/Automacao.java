@@ -13,7 +13,7 @@ public class Automacao {
     @Test
     public void pesquisarGoogle() throws IOException, InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/drive/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         LocalDateTime dateNow = LocalDateTime.now();
@@ -64,7 +64,7 @@ public class Automacao {
         String[] CsvEuro = {"Valor do euro hoje =  ", valorEuro};
         csv.writeNext(CsvEuro);
 
-        generateLog("Busca realizada em " + dateNow);
+        //generateLog("Busca realizada em " + dateNow);
 
         csv.close();
         driver.quit();
